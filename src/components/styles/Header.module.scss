@@ -1,0 +1,23 @@
+$shadow:
+    0 2px 23px 0 rgba(0,0,0,0.1),
+    0 2px 49px 0 rgba(0,0,0,0.06);
+header.header{
+    background-color: #fff;
+    padding: 0 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: $shadow;
+    h1{
+        font-size: 2em;
+        text-align: center;
+        margin-top: 12px;
+    }
+    p{
+        text-align: center;
+        margin-top: 12px;
+        font-size: 1.3em;
+        color: #727272;
+        
+    }
+    
+}
