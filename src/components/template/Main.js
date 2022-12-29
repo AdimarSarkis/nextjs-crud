@@ -1,11 +1,14 @@
 import styles from '../styles/Main.module.scss'
 import React from 'react'
+import Form from './Form';
+
 
 export default function Main(){
+
     return( 
         <main className={styles.content}>
             <div className={styles.conteudo}>
-                <div><h2>Teste</h2></div>
+                <Form />
             </div>
         </main>
     );

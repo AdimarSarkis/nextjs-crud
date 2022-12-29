@@ -1,0 +1,113 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    .form{
+        width: 43%;
+        height: 90%;
+        margin-top: 30px;
+        margin-left: 5px;
+        box-shadow: 10px 5px 20px 1px black;
+        .row{
+            width: 95%;
+            margin: 0 auto;
+            position: relative;
+            top: 25px;
+            .col{
+                margin: 20px 0;
+                padding: 25px;
+                &:nth-child(2){
+                    position: relative;
+                    bottom: 20px;
+                }
+                .formGroup{
+                    input{
+                        border: none;
+                        outline: none;
+                        background: none;
+                        border-bottom: 1px solid #1a2f3a;
+                        width: 90%;
+                        padding: 5px 0;
+                        font-size: 1.3em;
+                        margin: 5px 0;
+                        margin-left: 22px;
+                        color: black;
+                    }
+                    span{
+                        position: absolute;
+                        left: 48px;
+                        pointer-events: none;
+                        padding: 5px 0;
+                        margin: 10px 0; 
+                        font-size: 1.1em;
+                        color: rgb(155, 155, 155);
+                        transition: 0.5s;
+                    }
+                    input:focus ~ span,
+                    input:valid ~ span{
+                        font-size: 0.9em;
+                        transform: translateY(-25px);
+                        color: #1a2f3a;
+                    } 
+                }
+            }
+        }
+        .row2{
+            .col2{
+                .btn{
+                    width: 25em;
+                    height: 4em;
+                    background: none;
+                    margin: 10px 70px;
+                    cursor: pointer;
+                    position: relative;
+                    bottom: 20px;
+                    border: 2px solid #1a2f3a;
+                    &:nth-child(1){
+                        background: #1a2f3a;
+                        color: aliceblue;
+                        &:hover{
+                            background: #064263;
+                            
+                        }
+                    }
+                    &:nth-child(2){
+                        &:hover{
+                            background-color: rgb(148, 32, 32);
+                            color: aliceblue;    
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .usuarios{
+        width: 58%;
+        height: 400px;
+        margin-top: 30px;
+        .table{
+            width: 100%;
+            tr{
+                text-align: center;
+                height: 50px;
+                font-size: 1.3em;
+            }
+        }
+        button{
+            background: none;
+            cursor: pointer;
+            border: none;
+            font-size: 20px;
+            &:not(:nth-child(2)){
+                margin-right: 10px;
+                &:hover{
+                    color: #064263;
+                }
+            }
+            &:nth-child(2):hover{
+                color: rgb(148, 32, 32);
+            }
+            
+        }
+    }
+}
